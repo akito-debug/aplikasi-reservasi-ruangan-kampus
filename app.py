@@ -120,10 +120,10 @@ with tab_lihat:
     if not df_tampil.empty:
         if kata_kunci:
             df_tampil = df_tampil[
-                df_tampil['Nama_Pemesan'].str.contains(kata_kunci, case=False, na=False) |
-                df_tampil['Kontak'].str.contains(kata_kunci, case=False, na=False) |
-                df_tampil['ID_Reservasi'].str.contains(kata_kunci, case=False, na=False) |
-                df_tampil['Alasan_Reservasi'].str.contains(kata_kunci, case=False, na=False)
+                df_tampil['Nama_Pemesan'].astype(str).str.contains(kata_kunci, case=False, na=False) |
+                df_tampil['Kontak'].astype(str).str.contains(kata_kunci, case=False, na=False) |
+                df_tampil['ID_Reservasi'].astype(str).str.contains(kata_kunci, case=False, na=False) |
+                df_tampil['Alasan_Reservasi'].astype(str).str.contains(kata_kunci, case=False, na=False)
             ]
         st.dataframe(df_tampil, use_container_width=True)
     else:
