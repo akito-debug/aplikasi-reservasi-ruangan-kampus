@@ -2,7 +2,7 @@
 
 Aplikasi berbasis web sederhana untuk manajemen reservasi ruangan kampus, dibangun menggunakan **Python** dan **Streamlit**. Projek ini mengimplementasikan konsep *Object-Oriented Programming* (OOP) untuk mengelola data peminjaman ruangan dengan sistem penyimpanan berbasis file CSV.
 
-## ✨ Fitur Utama (CRUD)
+## ✨ Fitur
 
 Aplikasi ini dibagi menjadi 4 tab utama:
 1. **➕ Reservasi Baru:** Mengisi formulir peminjaman ruangan yang mencakup Nama, Kontak (Nomor Telepon/Email), Pilihan Ruangan, Tanggal & Jam (menggunakan sistem *dropdown* interval 30 menit), serta note alasan peminjaman.
